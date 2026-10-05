@@ -56,7 +56,22 @@ How to start:
 2. Boot the VM (using QEMU, VirtualBox or any other emulator).
 3. Connect to the VM using SSH (default credentials: `level00:level00`).
 ```bash
-ssh level00@<machine_ip> -p 4242
+ssh -p 4242 level00@<machine_ip>
+```
+
+4. You can simplify your work by adding the host:
+```bash
+sudo sed -i '/snow-crash/d; $a <machine_ip> snow-crash' /etc/hosts
+```
+> ```bash
+> ssh -p 4242 level00@snow-crash
+> ```
+> ```bash
+> scp -P 4242 level00@snow-crash:/home/flag/flag00 ./level00/flag
+> ```
+To clean up the `/etc/hosts` file, you can use the following command:
+```bash
+sudo sed -i '/snow-crash/d' /etc/hosts
 ```
 
 
@@ -68,7 +83,7 @@ ssh level00@<machine_ip> -p 4242
 
 - [x] 1. [level00](./level00/resources/Readme.md) ([Flag](./level00/flag))
 - [x] 2. [level01](./level01/resources/Readme.md) ([Flag](./level01/flag))
-- [ ] 3. level02
+- [x] 3. [level02](./level02/resources/Readme.md) ([Flag](./level02/flag))
 - [ ] 4. level03
 - [ ] 5. level04
 - [ ] 6. level05

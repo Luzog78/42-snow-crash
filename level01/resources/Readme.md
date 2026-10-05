@@ -49,7 +49,7 @@ john --show /tmp/passwd
 
 > ```
 > flag01:abcdefg:3001:3001::/home/flag/flag01:/bin/bash
-> 
+>
 > 1 password hash cracked, 0 left
 > ```
 
@@ -58,4 +58,4 @@ john --show /tmp/passwd
 
 ---
 
-[<<](/level00/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level00/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level02/resources/Readme.md)
