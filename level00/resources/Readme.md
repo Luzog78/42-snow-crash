@@ -55,4 +55,4 @@ echo "cdiiddwpgswtgt" | tr 'a-z' 'l-za-k'
 
 ---
 
-<< &nbsp; [[Back to main page]](/) &nbsp; >>
+<< &nbsp; [[Back to main page]](/) &nbsp; [>>](/level01/resources/Readme.md)

@@ -67,7 +67,7 @@ ssh level00@<machine_ip> -p 4242
 #### Mandatory
 
 - [x] 1. [level00](./level00/resources/Readme.md) ([Flag](./level00/flag))
-- [ ] 2. level01
+- [x] 2. [level01](./level01/resources/Readme.md) ([Flag](./level01/flag))
 - [ ] 3. level02
 - [ ] 4. level03
 - [ ] 5. level04
