@@ -64,9 +64,22 @@ mv token foobar
 ./level08 foobar
 ```
 
+> ```bash
+> quif5eloekouj29ke0vouxean
+> ```
+> It worked! We got the password for the `flag08` user.
+
+
+#### Step 3:
+
+- Don't forget to get the flag for the next level:
+```bash
+su flag08 -c getflag
+```
+
 
 <br>
 
 ---
 
-[<<](/level06/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level07/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level09/resources/Readme.md)
