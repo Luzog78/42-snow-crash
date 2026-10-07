@@ -34,7 +34,7 @@ ls -la
 > -rwxr-x---  1 flag06  level06  356 Mar  5  2016 level06.php
 > -r-x------  1 level06 level06  675 Apr  3  2012 .profile
 > ```
-> There is 2 files called `level06` and `level06.php` that are readable and executable by the user `level06`.
+> There is 2 files called `level06` and `level06.php` that are readable and executable by the user `flag06`.
 
 
 #### Step 2:
@@ -107,7 +107,7 @@ ls -la
 > -rwxr-x---  1 flag06  level06  356 Mar  5  2016 level06.php
 > -r-x------  1 level06 level06  675 Apr  3  2012 .profile
 > ```
-> There is 2 files called `level06` and `level06.php` that are readable and executable by the user `level06`.
+> There is 2 files called `level06` and `level06.php` that are readable and executable by the user `flag06`.
 
 
 #### Step 2:

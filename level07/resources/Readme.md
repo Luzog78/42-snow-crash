@@ -23,7 +23,7 @@ ls -la
 > -rwsr-sr-x 1 flag07  level07 8805 Mar  5  2016 level07
 > -r-x------ 1 level07 level07  675 Apr  3  2012 .profile
 > ```
-> There is 2 files called `level07` and `level07.php` that are readable and executable by the user `level07`.
+> Once again, a file called `level07` that is readable and executable by the user `flag07`.
 
 
 #### Step 2:
@@ -93,4 +93,4 @@ LOGNAME='`getflag`' ./level07
 
 ---
 
-[<<](/level06/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level06/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level08/resources/Readme.md)
