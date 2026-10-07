@@ -83,4 +83,4 @@ while [ ! -f /tmp/flagResult ]; do sleep 1; done; cat /tmp/flagResult
 
 ---
 
-[<<](/level04/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level04/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level06/resources/Readme.md)
