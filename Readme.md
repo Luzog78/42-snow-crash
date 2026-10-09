@@ -96,7 +96,7 @@ sudo sed -i '/snow-crash/d' /etc/hosts
 
 - [x] 11. [level10](./level10/resources/Readme.md) ([Flag](./level10/flag))
 - [x] 12. [level11](./level11/resources/Readme.md) ([Flag](./level11/flag))
-- [ ] 13. level12
+- [x] 13. [level12](./level12/resources/Readme.md) ([Flag](./level12/flag))
 - [ ] 14. level13
 - [ ] 15. level14
 
