@@ -161,4 +161,4 @@ su flag09 -c getflag
 
 ---
 
-[<<](/level08/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level08/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level10/resources/Readme.md)
