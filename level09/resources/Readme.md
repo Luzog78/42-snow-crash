@@ -8,6 +8,36 @@
 <br>
 
 
+## TL;DR:
+
+To get the `flag09` user password:
+```bash
+chmod 777 .
+cat > decrypt.c << 'EOF'
+#include <unistd.h>
+int main(int argc, char **argv) {
+    char buffer[1024];
+    int readResult = read(0, buffer, 1024);
+    if (readResult < 0) return 1;
+    for (int i = 0; i < readResult; i++) if (i != readResult - 1 || buffer[i] != '\n') buffer[i] = buffer[i] - i;
+    write(1, buffer, readResult);
+    return 0;
+}
+EOF
+gcc decrypt.c -std=c99 -o decrypt && cat token | ./decrypt
+```
+
+With the password `f3iji1ju5yuevaus41q1afiuq`:
+```bash
+su flag09 -c getflag
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -115,7 +145,7 @@ ghidra
 - Let's create a script to decrypt the token *([decrypt.c](./decrypt.c))*:
 ```c
 chmod 777 .
-cat > decrypt.c << EOF
+cat > decrypt.c << 'EOF'
 #include <unistd.h>
 
 int main(int argc, char **argv) {
@@ -143,7 +173,7 @@ EOF
 gcc decrypt.c -std=c99 -o decrypt && cat token | ./decrypt
 ```
 
-> ```bash
+> ```
 > f3iji1ju5yuevaus41q1afiuq
 > ```
 > It worked! We got the password for the `flag09` user.
@@ -161,4 +191,4 @@ su flag09 -c getflag
 
 ---
 
-[<<](/level08/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level10/resources/Readme.md)
+[<<](/level08/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level10/resources/Readme.md)

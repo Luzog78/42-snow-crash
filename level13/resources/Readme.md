@@ -8,6 +8,23 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+gdb -q ./level13 << 'EOF'
+break *0x804859a
+run
+set $eax=4242
+continue
+EOF
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -92,4 +109,4 @@ EOF
 
 ---
 
-[<<](/level12/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; >>
+[<<](/level12/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; >>

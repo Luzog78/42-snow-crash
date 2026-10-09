@@ -8,6 +8,21 @@
 <br>
 
 
+## TL;DR:
+
+To get the `flag00` user password:
+```bash
+cat $(find / -user flag00 2> /dev/null)
+```
+
+With the password `nottoohardhere`:
+```bash
+su flag00 -c getflag
+```
+
+<br>
+
+
 ## Explanation:
 
 
@@ -55,4 +70,4 @@ echo "cdiiddwpgswtgt" | tr 'a-z' 'l-za-k'
 
 ---
 
-<< &nbsp; [[Back to main page]](/) &nbsp; [>>](/level01/resources/Readme.md)
+<< &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level01/resources/Readme.md)

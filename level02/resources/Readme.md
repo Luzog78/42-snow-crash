@@ -8,6 +8,23 @@
 <br>
 
 
+## TL;DR:
+
+To get the `flag02` user password:
+```bash
+scp -P 4242 level02@snow-crash:/home/user/level02/level02.pcap /tmp/
+chmod +r /tmp/level02.pcap
+wireshark /tmp/level02.pcap
+```
+
+With the password `ft_waNDReL0L`:
+```bash
+su flag02 -c getflag
+```
+
+<br>
+
+
 ## Explanation:
 
 
@@ -143,8 +160,16 @@ f t _ w a n d r <DEL> <DEL> <DEL> N D R e l <DEL> L 0 L
 - So in a more readable format: `ft_waNDReL0L`
 
 
+#### Step 4:
+
+- Don't forget to get the flag to validate the level:
+```bash
+su flag02 -c getflag
+```
+
+
 <br>
 
 ---
 
-[<<](/level01/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level03/resources/Readme.md)
+[<<](/level01/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level03/resources/Readme.md)

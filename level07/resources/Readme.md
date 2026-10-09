@@ -8,6 +8,18 @@
 <br>
 
 
+## TL;DR:
+
+```bash
+LOGNAME='`getflag`' ./level07
+```
+
+<br>
+
+
+## Explanation:
+
+
 #### Step 1:
 
 - What's in the home directory:
@@ -93,4 +105,4 @@ LOGNAME='`getflag`' ./level07
 
 ---
 
-[<<](/level06/resources/Readme.md) &nbsp; [[Back to main page]](/) &nbsp; [>>](/level08/resources/Readme.md)
+[<<](/level06/resources/Readme.md) &nbsp; [[Back to main page]](/Readme.md) &nbsp; [>>](/level08/resources/Readme.md)
