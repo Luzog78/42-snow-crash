@@ -13,6 +13,8 @@
 To get the `flag01` user password:
 ```bash
 echo "$(cat /etc/passwd | grep flag01)" > /tmp/passwd
+```
+```bash
 scp -P 4242 level00@snow-crash:/tmp/passwd /tmp/
 john --show /tmp/passwd
 ```

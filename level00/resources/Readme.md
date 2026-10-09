@@ -12,7 +12,7 @@
 
 To get the `flag00` user password:
 ```bash
-cat $(find / -user flag00 2> /dev/null)
+cat $(find / -user flag00 2> /dev/null) | tr 'a-z' 'l-za-k'
 ```
 
 With the password `nottoohardhere`:
